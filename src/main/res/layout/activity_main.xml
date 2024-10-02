@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="EMI Calculator"
+        app:titleMargin="10dp"
+        app:titleMarginBottom="10dp"
+        app:titleMarginEnd="10dp"
+        app:titleMarginStart="130dp"
+        app:titleMargins="15dp"
+        app:titleTextColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:text="Mortgage Principal Amount"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/MortgageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:hint="Enter Amount" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:text="Interest Rate"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/interestInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        android:hint="% Amount" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:text="Mortgage Term"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/MonthlytermInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="12dp"
+        android:hint="Enter Term"
+        android:inputType="number"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/EMIoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="40dp"
+        android:text="EMI Value"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+
+
+
+
+
+</LinearLayout>
